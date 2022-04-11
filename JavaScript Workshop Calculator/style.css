@@ -64,6 +64,7 @@ button{
     cursor: pointer; 
     outline: none;
     background-color: rgb(199,199,199);
+    color: rgb(24, 0, 0);
 } 
 
 /*click button:hover*/
@@ -78,7 +79,7 @@ button:active{
 
 /*color operator and equal*/
 .operator, .equal{
-    background: rgb(130, 128, 255);
+    background: rgb(255, 149, 9);
     color:white;
     font-size: 30px;
 }
