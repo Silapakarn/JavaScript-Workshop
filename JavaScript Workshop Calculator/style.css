@@ -16,7 +16,7 @@ body{
     background: white;
     width: 400px;
     border-radius: 12px;
-    box-shadow: 0 5px 30px -5px rgba(0,0,0,0.6);
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,0.6);
 }
 
 .calculator-display{
@@ -65,14 +65,14 @@ button:hover{
 }
 
 
-
+/*click active btn translate Y*/
 button:active{
     transform: translateY(1px);
 }
 
 
 .operator, .equal{
-    background: rgb(103, 113, 255);
+    background: rgb(130, 128, 255);
     color:white;
     font-size: 30px;
 }
