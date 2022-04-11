@@ -3,6 +3,7 @@ html{
     box-sizing: border-box;
 }
 
+/*Design setting <tag> body */
 body{
     margin: 0;
     min-height: 100vh;
@@ -12,6 +13,7 @@ body{
     background-color: whitesmoke;
 }
 
+/*Design calculator color background width*/
 .calculator{
     background: white;
     width: 400px;
@@ -19,6 +21,7 @@ body{
     box-shadow: 0 5px 15px -5px rgba(0,0,0,0.6);
 }
 
+/*All Design calculator-display block*/
 .calculator-display{
     background-color: black;
     color: white;
@@ -28,6 +31,7 @@ body{
     border-radius: 10px 10px 0 0;
 }
 
+/*Design calculator-display --- h1*/
 .calculator-display h1{
     margin: 0;
     font-size: 45px;
@@ -36,6 +40,7 @@ body{
     overflow-x: auto;
 }
 
+/*setting column and row equal calculator-botton*/
 .calculator-botton{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -43,39 +48,41 @@ body{
     padding: 8px;
 }
 
+/*setting column and row equal*/
 .equal{
     grid-column: -2;
     grid-row: 2/spans 5;
 }
 
+/*Design button*/
 button{
     min-height: 50px;
     font-size: 20px;
     font-weight: 100;
     border:none;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: pointer; 
     outline: none;
     background-color: rgb(199,199,199);
-}
+} 
 
-
+/*click button:hover*/
 button:hover{
-    filter: brightness(110%)
+    filter: brightness(110%);
 }
-
 
 /*click active btn translate Y*/
 button:active{
     transform: translateY(1px);
 }
 
-
+/*color operator and equal*/
 .operator, .equal{
     background: rgb(130, 128, 255);
     color:white;
     font-size: 30px;
 }
+
 
 @media screen and (max-width: 600px) {
     .calculator{
