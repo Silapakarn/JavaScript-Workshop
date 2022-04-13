@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income-expense account program</title>
+    <!--import CSS-->
+    <link rel="stylesheet" href="./style.css">
+    <!--import javascipt-->
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <h2>Income-expense account program</h2>
+    
+    <!--container-->
+    <div class="container">
+        <h4>Balance (Baht)</h4>
+        <h1 id="balance">฿0.00</h1>
+
+        <!--income and expense account-->
+        <div class="income-expense-container">
+            
+            <!--income-->
+            <div>
+                <h4>income</h4>
+                <p id="money-plus" class="money plus">฿5000</p>
+            </div>
+
+            <!--expense-->
+            <div>
+                <h4>expense</h4>
+                <p id="money-minus" class="money minus">฿200</p>
+            </div>
+            
+        </div>
+
+        <!--Transaction history-->
+        <h3>Transaction history</h3>
+
+        <ul id="list" class="list">
+            <li class="minus">car repair <span>฿4000</span>
+            <!--delete-buttin-->
+            <button class="delete-btn">x</button>
+            </li>
+
+            <li class="minus">salary <span>฿15000</span>
+            <!--delete-buttin-->
+            <button class="delete-btn">x</button>
+            </li>
+        </ul>
+
+        <!--Add transaction-->
+        <h3>Add transaction</h3>
+        <form id="from">
+            
+            <!--item-->
+            <div class="from-control">
+                <label for="text">item name</label>
+                <input type="text" name="" id="text" placeholder="Enter a transaction name.">
+            </div>
+
+            <!--amount-->
+            <div class="from-control">
+                <label for="amount">amount <br> (+income , -expense)</label>Amount</label>
+                <input type="number" name="" id="amount" placeholder="Enter a transaction amount.">
+            </div>
+
+            <!--Button add transaction-->
+            <button class="btn">Add transaction</button>
+        </form>
+
+        
+    </div>
+
+</body>
+</html>

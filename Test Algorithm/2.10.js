@@ -9,8 +9,8 @@ function draw(n){
             }
         }
 
-        for (let g = 1; g < n; i++){
-            if (g < i) {
+        for (let g = n-1; g > 0; g--){
+            if (g > i) {
                 text += '*';
             } else {
                 text += '-';
@@ -20,4 +20,4 @@ function draw(n){
     }
     console.log(text);
 }
-draw(3);
+draw(4);
