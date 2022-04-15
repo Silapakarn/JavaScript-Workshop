@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-
 /*create variable add shadows*/
 :root{
     --box-shadow:0 1px 3px rgba(0,0,0,0.12);
@@ -8,6 +7,7 @@
 
 *{
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*Design an overview of the program.*/
@@ -105,7 +105,7 @@ input[type="text"],input[type="number"]{
     background-color: #ff8615;
     color: #fff;
     cursor: pointer;
-    border-radius:3px;
+    border-radius:5px;
 
     /*create variable add shadows*/
     box-shadow: var(--box-shadow);
@@ -116,4 +116,57 @@ input[type="text"],input[type="number"]{
     font-size: 16px;
     width: 100%;
     font-weight: bold;
+}
+
+/*Transaction history*/
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+/*Details Transaction*/
+.list li{
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/*color border-right*/
+.list li.plus{
+    border-right: 5px solid #2ecc71;
+}
+.list li.minus{
+    border-right: 5px solid red;
+}
+
+/*delete-btn*/
+.delete-btn{
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+    border:0;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 4px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    transform: translate(-100%, -170%);
+    box-shadow: var(--box-shadow);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn{
+    opacity: 1;
+}
+
+.btn:focus,.delete-btn:focus{
+    outline: 0;
 }

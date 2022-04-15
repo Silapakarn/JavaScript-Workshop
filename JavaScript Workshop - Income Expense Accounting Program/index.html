@@ -7,8 +7,6 @@
     <title>Income-expense account program</title>
     <!--import CSS-->
     <link rel="stylesheet" href="./style.css">
-    <!--import javascipt-->
-    <script src="./script.js"></script>
 </head>
 
 <body>
@@ -25,13 +23,13 @@
             <!--income-->
             <div>
                 <h4>income</h4>
-                <p id="money-plus" class="money plus">฿5000</p>
+                <p id="money_plus" class="money plus">฿5000</p>
             </div>
 
             <!--expense-->
             <div>
                 <h4>expense</h4>
-                <p id="money-minus" class="money minus">฿200</p>
+                <p id="money_minus" class="money minus">฿200</p>
             </div>
             
         </div>
@@ -39,30 +37,20 @@
         <!--Transaction history-->
         <h3>Transaction history</h3>
 
-        <ul id="list" class="list">
-            <li class="minus">car repair <span>฿4000</span>
-            <!--delete-buttin-->
-            <button class="delete-btn">x</button>
-            </li>
-
-            <li class="minus">salary <span>฿15000</span>
-            <!--delete-buttin-->
-            <button class="delete-btn">x</button>
-            </li>
-        </ul>
+        <ul id="list" class="list"></ul>
 
         <!--Add transaction-->
         <h3>Add transaction</h3>
-        <form id="from">
+        <form id="form">
             
             <!--item-->
-            <div class="from-control">
-                <label for="text">item name</label>
+            <div class="form-control">
+                <label for="text">transaction name</label>
                 <input type="text" name="" id="text" placeholder="Enter a transaction name.">
             </div>
 
             <!--amount-->
-            <div class="from-control">
+            <div class="form-control">
                 <label for="amount">amount <br> (+income , -expense)</label>Amount</label>
                 <input type="number" name="" id="amount" placeholder="Enter a transaction amount.">
             </div>
@@ -71,8 +59,9 @@
             <button class="btn">Add transaction</button>
         </form>
 
-        
     </div>
 
+    <!--import javascipt-->
+    <script src="./script.js"></script>
 </body>
 </html>
