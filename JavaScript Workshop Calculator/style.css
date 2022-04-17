@@ -1,0 +1,92 @@
+
+html{
+    box-sizing: border-box;
+}
+
+/*Design setting <tag> body */
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+/*Design calculator color background width*/
+.calculator{
+    background: white;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,0.6);
+}
+
+/*All Design calculator-display block*/
+.calculator-display{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10px 10px 0 0;
+}
+
+/*Design calculator-display --- h1*/
+.calculator-display h1{
+    margin: 0;
+    font-size: 45px;
+    padding: 25px;
+    font-weight: 100;
+    overflow-x: auto;
+}
+
+/*setting column and row equal calculator-botton*/
+.calculator-botton{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 8px;
+    padding: 8px;
+}
+
+/*setting column and row equal*/
+.equal{
+    grid-column: -2;
+    grid-row: 2/spans 5;
+}
+
+/*Design button*/
+button{
+    min-height: 50px;
+    font-size: 20px;
+    font-weight: 100;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer; 
+    outline: none;
+    background-color: rgb(199,199,199);
+    color: rgb(24, 0, 0);
+} 
+
+/*click button:hover*/
+button:hover{
+    filter: brightness(110%);
+}
+
+/*click active btn translate Y*/
+button:active{
+    transform: translateY(1px);
+}
+
+/*color operator and equal*/
+.operator, .equal{
+    background: rgb(255, 149, 9);
+    color:white;
+    font-size: 30px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .calculator{
+        width: 95%;
+    }
+}
