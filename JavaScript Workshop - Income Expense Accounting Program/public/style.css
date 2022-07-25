@@ -106,6 +106,7 @@ input[type="text"],input[type="number"]{
     color: #fff;
     cursor: pointer;
     border-radius:5px;
+    border: none;
 
     /*create variable add shadows*/
     box-shadow: var(--box-shadow);
