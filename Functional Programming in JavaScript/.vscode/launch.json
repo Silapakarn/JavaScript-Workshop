@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\Fibonacci.js"
+            "program": "${workspaceFolder}\\Tsek_3.js"
         }
     ]
 }
